@@ -41,7 +41,7 @@ Although we’ve been using Atom in class, feel free to replace it with WebStorm
 Consider approaching this project as an entry into this semester’s iArt Mix Exhibition.
 
 ## Due
-10:00 AM on Tuesday, 16 April 2019.
+10:00 AM on Tuesday, 30 April 2019.
 
 ## Submission
 You will need to issue a pull request back into the original repo, the one from which your fork was created. See the **Issuing Pull Requests** section of [this site](http://code-warrior.github.io/tutorials/git/github/index.html) for help on how to submit your assignment.
