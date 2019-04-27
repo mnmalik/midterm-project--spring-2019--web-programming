@@ -1,0 +1,15 @@
+$color--main: #06f;
+$color--border: lighten($color--main, 20%);
+
+body {
+   padding: 100px;
+   color: $color--main;
+
+   p {
+      background: beige;
+      border: 3px solid $color--border;
+      padding: 25px;
+      text-align: center;
+      line-height: 1.9;
+   }
+}
