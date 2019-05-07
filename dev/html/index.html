@@ -2,32 +2,172 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   <title>A Gulp-based Template for HTML, CSS, Sass, and ES6 JS</title>
+   <title>Photo Site</title>
    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,h1 {font-family: "Montserrat", sans-serif}
+        img {margin-bottom: -7px}
+        .w3-row-padding img {margin-bottom: 12px}
+    </style>
+    <script language="javascript" type="text/javascript" src="path/to/p5.sound.js"></script>
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"
+            integrity="sha256-gAw6iX1ivbkYgIvRfOXfTEm/w2DZLEB3W6RjSIEydio="
+            crossorigin="anonymous"></script>
+    <script src="js/painting-with-random-brush-and-random-color.js"></script> -->
+
+
 </head>
 <body>
- <h1> Life </h1>
 
+ <!-- !PAGE CONTENT! -->
+ <div class="w3-content" style="max-width:1500px">
 
+     <!-- Header -->
+     <div class="w3-opacity">
+         <div class="w3-clear"></div>
+         <header class="w3-center w3-margin-bottom">
+             <h1><b>Photography Escape</b></h1>
+         </header>
+     </div>
 
+     <!-- Photo Grid -->
+     <div class="w3-row" id="myGrid" style="margin-bottom:128px">
 
+         <div class="w3-third">
+             <div class="container">
+                 <img src="image6.jpg" alt="sky" class="image">
+                 <div class="overlay">
+                     <div class="text">The Sky</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image2.jpg" alt="water" class="image">
+                 <div class="overlay">
+                     <div class="text">The Water</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image3.jpg" alt="montage" class="image">
+                 <div class="overlay">
+                     <div class="text">The Montage</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image4.jpg" alt="piano" class="image">
+                 <div class="overlay">
+                     <div class="text">The Paino</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image5.jpg" alt="rocks" class="image">
+                 <div class="overlay">
+                     <div class="text">The Rocks</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image6.jpg" alt="sky" class="image">
+                 <div class="overlay">
+                     <div class="text">The Sky</div>
+                 </div>
+             </div>
+         </div>
 
+         <div class="w3-third"> <div class="container">
+             <img src="image8.jpg" alt="water2" class="image">
+             <div class="overlay">
+                 <div class="text">The Water</div>
+             </div>
+         </div>
+             <div class="container">
+                 <img src="image9.jpg" alt="nightsky" class="image">
+                 <div class="overlay">
+                     <div class="text">The Nightlife</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image8.jpg" alt="montage" class="image">
+                 <div class="overlay">
+                     <div class="text">The Montage</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image9.jpg" alt="piano" class="image">
+                 <div class="overlay">
+                     <div class="text">The Paino</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image8.jpg" alt="rocks" class="image">
+                 <div class="overlay">
+                     <div class="text">The Rocks</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image3.jpg" alt="image" class="image">
+                 <div class="overlay">
+                     <div class="text">The Sky</div>
+                 </div>
+             </div>
+         </div>
 
+         <div class="w3-third">             <div class="container">
+             <img src="image6.jpg" alt="sky" class="image">
+             <div class="overlay">
+                 <div class="text">The Sky</div>
+             </div>
+         </div>
+             <div class="container">
+                 <img src="image2.jpg" alt="water" class="image">
+                 <div class="overlay">
+                     <div class="text">The Water</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image3.jpg" alt="montage" class="image">
+                 <div class="overlay">
+                     <div class="text">The Montage</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image4.jpg" alt="piano" class="image">
+                 <div class="overlay">
+                     <div class="text">The Paino</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image5.jpg" alt="rocks" class="image">
+                 <div class="overlay">
+                     <div class="text">The Rocks</div>
+                 </div>
+             </div>
+             <div class="container">
+                 <img src="image6.jpg" alt="sky" class="image">
+                 <div class="overlay">
+                     <div class="text">The Sky</div>
+                 </div>
+             </div>
+         </div>
+     </div>
 
+     <!-- End Page Content -->
+ </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="scripts/app.js" defer></script>
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+     <i class="fa fa-facebook-official w3-hover-opacity"></i>
+     <i class="fa fa-instagram w3-hover-opacity"></i>
+     <i class="fa fa-snapchat w3-hover-opacity"></i>
+     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+     <i class="fa fa-twitter w3-hover-opacity"></i>
+     <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </footer>
+ <script src="scripts/app.js" defer></script>
 </body>
 </html>
+
