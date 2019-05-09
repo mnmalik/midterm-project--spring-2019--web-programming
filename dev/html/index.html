@@ -1,172 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <title>Photo Site</title>
-   <link rel="stylesheet" href="styles/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Photography Escape</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 
-    <style>
-        body,h1 {font-family: "Montserrat", sans-serif}
-        img {margin-bottom: -7px}
-        .w3-row-padding img {margin-bottom: 12px}
-    </style>
-    <script language="javascript" type="text/javascript" src="path/to/p5.sound.js"></script>
-<!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"
-            integrity="sha256-gAw6iX1ivbkYgIvRfOXfTEm/w2DZLEB3W6RjSIEydio="
-            crossorigin="anonymous"></script>
-    <script src="js/painting-with-random-brush-and-random-color.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
 
-
+    <script type="text/javascript" src="scripts/sketch.js"></script>
+    <script type="text/javascript" src="scripts/Star.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
 </head>
 <body>
 
- <!-- !PAGE CONTENT! -->
- <div class="w3-content" style="max-width:1500px">
+<!--&lt;!&ndash; !PAGE CONTENT! &ndash;&gt;-->
+<!--<div class="w3-content" style="max-width:1500px">-->
 
-     <!-- Header -->
-     <div class="w3-opacity">
-         <div class="w3-clear"></div>
-         <header class="w3-center w3-margin-bottom">
-             <h1><b>Photography Escape</b></h1>
-         </header>
-     </div>
+    <!-- Header -->
+<header> Photography Escape </header>
+<!--<h1>Photography Escape</h1>-->
 
-     <!-- Photo Grid -->
-     <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+<!-- Slideshow container -->
+<div style="text-align: center; max-width: 1280px; height: auto; display: block; margin-left: auto; margin-right: auto;" class="slideshow-container">
 
-         <div class="w3-third">
-             <div class="container">
-                 <img src="image6.jpg" alt="sky" class="image">
-                 <div class="overlay">
-                     <div class="text">The Sky</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image2.jpg" alt="water" class="image">
-                 <div class="overlay">
-                     <div class="text">The Water</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image3.jpg" alt="montage" class="image">
-                 <div class="overlay">
-                     <div class="text">The Montage</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image4.jpg" alt="piano" class="image">
-                 <div class="overlay">
-                     <div class="text">The Paino</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image5.jpg" alt="rocks" class="image">
-                 <div class="overlay">
-                     <div class="text">The Rocks</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image6.jpg" alt="sky" class="image">
-                 <div class="overlay">
-                     <div class="text">The Sky</div>
-                 </div>
-             </div>
-         </div>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 12</div>
+        <img src="image5.jpg" alt="image1" style="width:90%;">
+        <div class="text2">Upper East Side, 2017 </div>
+    </div>
 
-         <div class="w3-third"> <div class="container">
-             <img src="image8.jpg" alt="water2" class="image">
-             <div class="overlay">
-                 <div class="text">The Water</div>
-             </div>
-         </div>
-             <div class="container">
-                 <img src="image9.jpg" alt="nightsky" class="image">
-                 <div class="overlay">
-                     <div class="text">The Nightlife</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image8.jpg" alt="montage" class="image">
-                 <div class="overlay">
-                     <div class="text">The Montage</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image9.jpg" alt="piano" class="image">
-                 <div class="overlay">
-                     <div class="text">The Paino</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image8.jpg" alt="rocks" class="image">
-                 <div class="overlay">
-                     <div class="text">The Rocks</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image3.jpg" alt="image" class="image">
-                 <div class="overlay">
-                     <div class="text">The Sky</div>
-                 </div>
-             </div>
-         </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 12</div>
+        <img src="image8.jpg" alt="image2" style="width:90%">
+        <div class="text2">Hudson River, 2017 </div>
+    </div>
 
-         <div class="w3-third">             <div class="container">
-             <img src="image6.jpg" alt="sky" class="image">
-             <div class="overlay">
-                 <div class="text">The Sky</div>
-             </div>
-         </div>
-             <div class="container">
-                 <img src="image2.jpg" alt="water" class="image">
-                 <div class="overlay">
-                     <div class="text">The Water</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image3.jpg" alt="montage" class="image">
-                 <div class="overlay">
-                     <div class="text">The Montage</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image4.jpg" alt="piano" class="image">
-                 <div class="overlay">
-                     <div class="text">The Paino</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image5.jpg" alt="rocks" class="image">
-                 <div class="overlay">
-                     <div class="text">The Rocks</div>
-                 </div>
-             </div>
-             <div class="container">
-                 <img src="image6.jpg" alt="sky" class="image">
-                 <div class="overlay">
-                     <div class="text">The Sky</div>
-                 </div>
-             </div>
-         </div>
-     </div>
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 12</div>
+    <img src="image10.jpg" alt="image3" style="width:90%; image-orientation: flip;">
+    <div class="text2">Diyanet Center of America, 2018</div>
+   </div>
 
-     <!-- End Page Content -->
- </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="image6.jpg" alt="image4" style="width:90%">
+        <div class="text2">Brooklyn, 2018</div>
+    </div>
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 12</div>
+    <img src="image11.jpg" alt="image5" style="width:90%;image-orientation: flip;">
+    <div class="text2">Diyanet Center of America, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="image13.jpg" alt="image6" style="width:90%;image-orientation: flip;">
+        <div class="text2">Hudson River Park Pier 16, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="image16.jpg" alt="image7" style="width:90%; image-orientation: flip;">
+        <div class="text2">Brooklyn, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="image14.jpg" alt="image8" style="width:90%;">
+        <div class="text2">Brighton Beach, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="image15.jpg" alt="image9" style="width:90%;image-orientation: flip;">
+        <div class="text2">Church Kensington, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">10 / 12</div>
+        <img src="image17.jpg" alt="image10" style="width:90%;image-orientation: flip;">
+        <div class="text2">Church Kensington, 2018</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="image18.jpg" alt="image11" style="width:90%;image-orientation: flip;">
+        <div class="text2"> Roosevelt Island, 2019</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="image19.jpg" alt="image12" style="width:90%;image-orientation: flip;">
+        <div class="text2">West Side Canal St., 2019</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
- <!-- Footer -->
- <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-     <i class="fa fa-facebook-official w3-hover-opacity"></i>
-     <i class="fa fa-instagram w3-hover-opacity"></i>
-     <i class="fa fa-snapchat w3-hover-opacity"></i>
-     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-     <i class="fa fa-twitter w3-hover-opacity"></i>
-     <i class="fa fa-linkedin w3-hover-opacity"></i>
- </footer>
  <script src="scripts/app.js" defer></script>
 </body>
 </html>

@@ -116,62 +116,45 @@ table {
   border-spacing: 0;
 }
 
-body {
-  padding: 100px;
-  color: #06f;
-}
-
-body p {
-  background: beige;
-  border: 3px solid #66a3ff;
-  padding: 25px;
-  text-align: center;
-  line-height: 1.9;
-}
-
-canvas {
+div {
+  color: black;
   align-content: center;
-  background-color: var(--background-color--canvas);
-  display: block;
-  margin: auto;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   text-align: center;
+  padding-top: 1%;
+}
+
+header {
+  padding: 1%;
+  padding-bottom: 0.5% !important;
+  color: darkkhaki;
+  text-align: center;
+  font-family: Palatino , serif;
+  font-size: 120%;
+}
+
+.numbertext {
+  font-family: Palatino , serif;
+  padding-bottom: 1%;
+  padding-top: 0.1%;
+  color: gainsboro;
+}
+
+.text2 {
+  color: darkkhaki;
+  font-family: Palatino , serif;
+  padding: 1%;
+}
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  color: darkkhaki;
 }
